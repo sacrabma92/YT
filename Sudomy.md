@@ -1,4 +1,4 @@
-<h1>MassDNS</h1>
+<h1>Sudomy</h1>
 
 Repositorio:
 ```
@@ -25,12 +25,6 @@ source .venv/bin/activate
 ```
 sudo apt install gccgo-go 
 sudo apt install golang-go
-go install github.com/tomnomnom/unfurl@latest
-sudo cp ~/go/bin/unfurl  /usr/local/bin
-go install github.com/dwisiswant0/cf-check@latest
-sudo cp ~/go/bin/cf-check  /usr/local/bin
-go install -v github.com/rverton/webanalyze/cmd/webanalyze@latest
-sudo cp ~/go/bin/webanalyze /usr/local/bin 
 ```
 
 <h2>Instalamos las dependencias requeridas por el programa</h2>
@@ -38,6 +32,14 @@ sudo cp ~/go/bin/webanalyze /usr/local/bin
 ```
 python3 -m pip install -r requirements.txt
 sudo apt-get update
+
+go install github.com/tomnomnom/unfurl@latest
+sudo cp ~/go/bin/unfurl  /usr/local/bin
+go install github.com/dwisiswant0/cf-check@latest
+sudo cp ~/go/bin/cf-check  /usr/local/bin
+go install -v github.com/rverton/webanalyze/cmd/webanalyze@latest
+sudo cp ~/go/bin/webanalyze /usr/local/bin 
+
 sudo apt-get install jq nmap npm chromium parallel
 npm i phantomjs
 sudo npm i -g wappalyzer wscat
